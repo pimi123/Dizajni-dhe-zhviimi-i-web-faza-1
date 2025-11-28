@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fafafa;
+    color: #222;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background: #e4002b;
+    color: #fff;
+    font-size: 14px;
+}
+
+.top-bar a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e4002b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #e4002b;
+}
+
+.cta a {
+    background: #e4002b;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.cta a:hover {
+    background: #c70024;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    background-image: url("images/hero.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero .text {
+    position: relative;
+    z-index: 2;
+    max-width: 45%;
+    color: white;
+}
+
+.hero .text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero .text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .text a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 12px 25px;
+    background: #e4002b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.hero .text a:hover {
+    background: #c70024;
+}
+
+
+.services {
+    padding: 40px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #e4002b;
+}
+
+.items{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.item {
+    position: relative;
+    width: 30%;
+    border-radius: 6px;
+    overflow: hidden;
+    color: white;
+}
+
+.item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+}
+
+.item h3,
+.item p,
+.item a {
+    position: absolute;
+    left: 20px;
+    z-index: 2;
+}
+
+.item h3 {
+    bottom: 70px;
+    font-size: 20px;
+}
+
+.item p {
+    bottom: 45px;
+    font-size: 14px;
+    max-width: 80%;
+}
+
+.item a {
+    bottom: 15px;
+    color: white;
+    text-decoration: underline;
+}
+
+
+.business {
+    padding: 60px 40px;
+    background: #e4002b;
+    color: white;
+    text-align: center;
+}
+
+.business a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #fff;
+    color: #e4002b;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.news {
+    padding: 40px;
+}
+
+.news h2 {
+    text-align: center;
+    color: #e4002b;
+    margin-bottom: 30px;
+}
+
+.news-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.news-grid article {
+    background: #fff;
+    width: 30%;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: .3s;
+}
+
+.news-grid article:hover {
+    transform: translateY(-5px);
+    border-color: #e4002b;
+}
+
+.news-grid h3 {
+    color: #e4002b;
+    margin-bottom: 10px;
+}
+
+.news-grid a {
+    text-decoration: none;
+    color: #e4002b;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 40px;
+}
