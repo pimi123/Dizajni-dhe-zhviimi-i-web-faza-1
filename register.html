@@ -5,39 +5,45 @@
     <title>Register</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="auth.css" />
+    <link rel="icon" type="image/png" href="images/BRM.png" />
     <script src="components.js" defer></script>
   </head>
   <body>
     <special-header></special-header>
-    <div class="auth-container">
-      <h2>Krijo një llogari të re</h2>
+    <div class="container">
+      <div class="auth-container">
+        <h2>Krijo një llogari të re</h2>
 
-      <form id="registerForm">
-        <div class="field">
-          <label>Emri</label>
-          <input type="text" id="regName" />
-        </div>
+        <form id="registerForm">
+          <div class="field">
+            <label>Emri</label>
+            <input type="text" id="regName" />
+            <p class="error">Gabim</p>
+          </div>
 
-        <div class="field">
-          <label>Email</label>
-          <input type="text" id="regEmail" />
-        </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="text" id="regEmail" />
+            <p class="error">Gabim</p>
+          </div>
 
-        <div class="field">
-          <label>Fjalëkalimi</label>
-          <input type="password" id="regPassword" />
-        </div>
+          <div class="field">
+            <label>Fjalëkalimi</label>
+            <input type="password" id="regPassword" />
+            <p class="error">Gabim</p>
+          </div>
 
-        <div class="field">
-          <label>Konfirmo Fjalëkalimin</label>
-          <input type="password" id="regConfirmPassword" />
-        </div>
+          <div class="field">
+            <label>Konfirmo Fjalëkalimin</label>
+            <input type="password" id="regConfirmPassword" />
+            <p class="error">Gabim</p>
+          </div>
 
-        <button type="submit">Regjistrohu</button>
-        <p class="link">Ke llogari? <a href="login.html">Kyçu</a></p>
-      </form>
+          <button type="submit">Regjistrohu</button>
+          <p class="link">Ke llogari? <a href="login.html">Kyçu</a></p>
+        </form>
+      </div>
     </div>
-
     <script src="auth.js"></script>
     <special-footer></special-footer>
   </body>
