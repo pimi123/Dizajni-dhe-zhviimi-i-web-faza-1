@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="sq">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Login</title>
-    <link rel="stylesheet" href="auth.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="auth.css" />
+    <link rel="icon" type="image/png" href="images/BRM.png" />
+    <script src="components.js" defer></script>
+  </head>
+  <body>
+    <special-header></special-header>
+    <div class="container">
+      <div class="auth-container">
+        <h2>Kyçu në llogarinë tënde</h2>
 
-<div class="auth-container">
-    <h2>Kyçu në llogarinë tënde</h2>
-
-    <form id="loginForm">
-        <div class="field">
+        <form id="loginForm">
+          <div class="field">
             <label>Email</label>
-            <input type="text" id="loginEmail">
+            <input type="text" id="loginEmail" />
             <p class="error">tlutem plotso fushen</p>
-        </div>
+          </div>
 
-        <div class="field">
+          <div class="field">
             <label>Fjalëkalimi</label>
-            <input type="password" id="loginPassword">
+            <input type="password" id="loginPassword" />
             <p class="error">tlutem plotso fushen</p>
+          </div>
 
-        </div>
-
-        <button type="submit">Kyçu</button>
-        <p class="link">Nuk ke llogari? <a href="register.html">Regjistrohu</a></p>
-    </form>
-</div>
-
-<script src="auth.js"></script>
-</body>
+          <button type="submit">Kyçu</button>
+          <p class="link">
+            Nuk ke llogari? <a href="register.html">Regjistrohu</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="auth.js"></script>
+    <special-footer></special-footer>
+  </body>
 </html>
