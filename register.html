@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="sq">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Register</title>
-    <link rel="stylesheet" href="auth.css">
-</head>
-<body>
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <h2>Krijo një llogari të re</h2>
 
-<div class="auth-container">
-    <h2>Krijo një llogari të re</h2>
-
-    <form id="registerForm">
+      <form id="registerForm">
         <div class="field">
-            <label>Emri</label>
-            <input type="text" id="regName">
+          <label>Emri</label>
+          <input type="text" id="regName" />
         </div>
 
         <div class="field">
-            <label>Email</label>
-            <input type="text" id="regEmail">
+          <label>Email</label>
+          <input type="text" id="regEmail" />
         </div>
 
         <div class="field">
-            <label>Fjalëkalimi</label>
-            <input type="password" id="regPassword">
+          <label>Fjalëkalimi</label>
+          <input type="password" id="regPassword" />
         </div>
 
         <div class="field">
-            <label>Konfirmo Fjalëkalimin</label>
-            <input type="password" id="regConfirmPassword">
+          <label>Konfirmo Fjalëkalimin</label>
+          <input type="password" id="regConfirmPassword" />
         </div>
 
         <button type="submit">Regjistrohu</button>
         <p class="link">Ke llogari? <a href="login.html">Kyçu</a></p>
-    </form>
-</div>
+      </form>
+    </div>
 
-<script src="auth.js"></script>
-</body>
+    <script src="auth.js"></script>
+  </body>
 </html>
