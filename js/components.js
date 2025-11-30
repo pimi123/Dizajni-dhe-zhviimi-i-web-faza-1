@@ -22,7 +22,7 @@ class SpecialHeader extends HTMLElement {
                 <nav>
                     <ul>
                         <li><a href="index.html">Ballina</a></li>
-                        <li><a href="about.html">Rreth nesh</a></li>
+                        <li><a href="/pages/about.html">Rreth nesh</a></li>
                         <li><a href="services.html">Shërbimet</a></li>
                         <li><a href="contact.html">Kontakti</a></li>
                     </ul>
