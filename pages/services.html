@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/auth.css" />
+    <link rel="stylesheet" href="../style/services.css" />
+    <link rel="icon" type="image/png" href="../images/BRM.png" />
+    <script src="../js/components.js" defer></script>
+        <script src="../js/services.js" defer></script>
+
+    <title>Shërbimet - Banka Red & Milky</title>
+  </head>
+  <body>
+    <special-header></special-header>
+
+    <main>
+      <section class="hero hero--tall">
+        <div class="text">
+          <h1>Shërbimet tona</h1>
+          <p>
+            Zgjidhje bankare për individë dhe biznese — konta, kredia, kartela dhe sherbime dixhitale.
+          </p>
+          <a href="../service-details.html">Apliko ose mëso më shumë</a>
+        </div>
+      </section>
+
+      <section class="services">
+        <h2>Çfarë ofrojmë</h2>
+
+        <div class="items">
+          <div class="item">
+            <img src="../images/img1.jpg" alt="Llogari Rrjedhëse" />
+            <h3>Llogari Rrjedhëse</h3>
+            <p>
+              Llogari për përdorim të përditshëm me akses online, kartë dhe mbështetje 24/7.
+            </p>
+            <p class="open-service-btn" data-service="Llogari Rrjedhëse" >
+              Krijo llogari
+            </p>
+          </div>
+
+          <div class="item">
+            <img src="../images/img2.jpg" alt="Kredi Personale" />
+            <h3>Kredi Personale</h3>
+            <p>
+              Oferta fleksibile me norma konkurruese dhe afate të përshtatshme pagesash.
+            </p>
+            <p class="open-service-btn" data-service="Kredi Personale" >
+              Apliko tani
+            </p>
+          </div>
+
+          <div class="item">
+            <img src="../images/img3.jpg" alt="Kartela Bankare" />
+            <h3>Kartela Bankare</h3>
+            <p>
+              Kartela debit dhe kredit me sigurim të lartë për pagesa online dhe POS.
+            </p>
+            <p class="open-service-btn" data-service="Kartela Bankare" >
+              Porosit kartelë
+            </p>
+          </div>
+
+          <div class="item">
+            <img src="../images/business_services.png" alt="Shërbime për Biznese" />
+            <h3>Shërbime për Biznese</h3>
+            <p>
+              Zgjidhje për llogari korporative, financim investimesh dhe menaxhim likuiditeti.
+            </p>
+            <p class="open-service-btn" data-service="Shërbime për Biznese" >
+              Na kontaktoni
+            </p>
+          </div>
+
+          <div class="item">
+            <img src="../images/ebanking.png" alt="e-Banking" />
+            <h3>e-Banking</h3>
+            <p>
+              Platformë e sigurt për transaksione, faturim dhe menaxhim llogarie nga telefoni.
+            </p>
+            <p class="open-service-btn" data-service="e-Banking" >
+              Aktivizo e-Banking
+            </p>
+          </div>
+
+          <div class="item">
+            <img src="../images/finance_consulting.jpg" alt="Konsultim Financiar" />
+            <h3>Konsultim Financiar</h3>
+            <p>
+              Këshillim për planifikim financiar, kredi dhe investime me ekspertë të dedikuar.
+            </p>
+            <p class="open-service-btn" data-service="Konsultim Financiar" >
+              Rezervo takim
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-cta">
+          <a href="../service-details.html" class="btn-apply">Filloni aplikimin</a>
+      </section>
+
+      <section class="news">
+        <h2>Pyetjet e shpeshta</h2>
+        <div class="faq-list">
+          <div class="faq-card">
+            <h3 class="faq-title">Si aplikoj për kredi?</h3>
+            <p class="faq-text">Shkoni te "Kredi Personale" dhe zgjidhni "Apliko tani" për formularin online ose rezervoni takim në degën tonë.</p>
+          </div>
+          <div class="faq-card">
+            <h3 class="faq-title">Sa kohë duhet për aprovimin?</h3>
+            <p class="faq-text">Koha e aprovimit varet nga lloji i shërbimit; shumica e aplikimeve për kredi marrin përgjigje brenda disa ditëve pune.</p>
+          </div>
+          <div class="faq-card">
+            <h3 class="faq-title">Si aktivizohet e-Banking?</h3>
+            <p class="faq-text">Regjistrohuni online ose vizitoni degën për verifikim; pas aktivizimit do të merrni kredencialet për hyrje.</p>
+          </div>
+          <div class="faq-card">
+            <h3 class="faq-title">A ka tarifa mujore?</h3>
+            <p class="faq-text">Tarifat varen sipas produktit; shikoni detajet e produktit në "Më shumë" ose kontaktoni shërbimin e klientit.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Calendar modal -->
+    <div id="apptModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="apptTitle">
+      <div class="overlay" data-close></div>
+      <div class="modal-window" role="document">
+        <button data-close class="modal-close" aria-label="Mbyll">&times;</button>
+        <h2 id="apptTitle">Rezervo takim - Konsultim Financiar</h2>
+        <p class="modal-desc">Zgjidhni datën dhe kohën që ju përshtatet.</p>
+        <form id="apptForm" class="modal-form">
+          <input type="hidden" name="service" value="Konsultim Financiar" />
+          <div class="form-row">
+            <label>Data</label>
+            <input type="date" name="date" required />
+          </div>
+          <div class="form-row">
+            <label>Ora</label>
+            <input type="time" name="time" required />
+          </div>
+          <div class="form-row">
+            <label>Emri (opsional)</label>
+            <input type="text" name="name" placeholder="Emri juaj" />
+          </div>
+          <div class="modal-actions">
+            <button type="button" data-close class="btn-secondary">Anulo</button>
+            <button type="submit" class="btn-primary">Rezervo</button>
+          </div>
+        </form>
+        <div id="apptConfirm" class="modal-confirm" hidden></div>
+      </div>
+    </div>
+
+    <!-- Unified service modal -->
+    <div id="serviceModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="serviceModalTitle">
+      <div class="overlay" data-close></div>
+      <div class="modal-window" role="document">
+        <button data-close class="modal-close" aria-label="Mbyll">&times;</button>
+        <h2 id="serviceModalTitle" class="modal-title">Kërkesë shërbimi</h2>
+        <p id="serviceModalDesc" class="modal-desc"></p>
+
+        <form id="serviceModalForm" class="modal-form">
+          <input type="hidden" name="service" id="modalService" value="" />
+          <div class="form">
+            <input name="name" placeholder="Emri i plotë" />
+            <input name="email" placeholder="Email" />
+            <input name="phone" placeholder="Telefoni" />
+            <input name="company" placeholder="Emri i kompanisë (për biznese)" class="company-field" hidden />
+            <select name="accountType" id="modalAccountType" class="account-type-field" hidden>
+              <option value="">Zgjidh lloj llogarie</option>
+              <option value="rrjedhese-personale">Personale</option>
+              <option value="rrjedhese-biznes">Biznes</option>
+            </select>
+            <div id="loanFields" class="loan-fields" hidden>
+              <input name="loanAmount" placeholder="Shuma e kërkuar" />
+            </div>
+            <div id="loanFields" class="loan-fields" hidden>
+                <input name="loanTerm" placeholder="Kohëzgjatja (muaj)" />
+            </div>
+            <div id="consultFields" class="consult-fields" hidden>
+              <label>Data</label>
+              <input type="date" name="date" />
+              <label>Ora</label>
+              <input type="time" name="time" />
+            </div>
+            <textarea name="message" placeholder="Shënime / mesazh" rows="3"></textarea>
+          </div>
+          <div class="modal-actions">
+            <button type="button" data-close class="btn-secondary">Anulo</button>
+            <button type="submit" class="btn-primary">Dërgo kërkesën</button>
+          </div>
+        </form>
+        <div id="serviceConfirm" class="modal-confirm" hidden></div>
+      </div>
+    </div>
+    <special-footer></special-footer>
+  </body>
+</html>

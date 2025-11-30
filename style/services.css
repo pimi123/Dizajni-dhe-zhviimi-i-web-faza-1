@@ -1,0 +1,233 @@
+.services {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #222;
+  font-size: 28px;
+}
+
+.open-service-btn {
+  display: inline-block;
+  margin-top: 8px;
+  align-self: flex-start;
+  padding: 8px 12px;
+  background: #e4002b;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  border: none;
+}
+
+/* cta= call to action */
+.services-cta {
+  width: 100%;
+  background: #e4002b;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.services-cta .btn-apply {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: transparent;
+  border: none;
+  font-weight:600;
+}
+
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.modal-backdrop.show { display: flex; }
+
+.modal-backdrop .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-window {
+  position: relative; 
+  z-index: 10001;
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  max-width: 540px;
+  width: 94%;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: #000;
+  font-size: 20px;
+  line-height: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10002;
+}
+
+.modal-window .modal-close:hover,
+.modal-window .modal-close:focus {
+  background: rgba(0,0,0,0.06);
+  color: #000;
+  outline: none;
+}
+
+.modal-window .modal-close {
+  background: none;
+  color: #000;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-window .modal-close:hover,
+.modal-window .modal-close:focus {
+  background: transparent;
+  color: #000;
+  outline: none;
+}
+
+.modal-window .modal-close {
+  background: none;
+  color: #000;
+  transition: background-color 0.15s, color 0.15s;
+    display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.modal-window .modal-close:hover,
+.modal-window .modal-close:focus {
+  background: transparent; 
+  color: #000;
+  outline: none;
+}
+
+.modal-window input,
+.modal-window textarea,
+.modal-window select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  color: #222;
+  box-sizing: border-box;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.modal-confirm {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #e6ffef;
+  border: 1px solid #b9f0d1;
+  color: #1a6b2b;
+}
+
+.btn-primary,
+.open-service-btn,
+.btn-apply {
+  background: #e4002b;
+  color: #fff;
+  border: none;
+}
+.btn-primary:hover,
+.open-service-btn:hover,
+.btn-apply:hover {
+  background: #c70024;
+}
+
+.btn-secondary {
+  background: #f2f2f2;
+  color: #111;
+  border: 1px solid #ddd;
+}
+.btn-secondary:hover {
+  background: #f2f2f2;
+  color: #111;
+  border: 1px solid #ddd;
+}
+
+.modal-window .form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.modal-window .form-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.modal-window .form-row input,
+.modal-window .form-row select,
+.modal-window .form-row textarea {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.hero--tall {
+  height: 50vh;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+}
+
+.news {
+  margin-top: 60px;
+}
+.faq-list {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.faq-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+.faq-title {
+  color: #e4002b;
+  margin: 0 0 8px;
+}
+.faq-text {
+  color: #555;
+  margin: 0;
+}
