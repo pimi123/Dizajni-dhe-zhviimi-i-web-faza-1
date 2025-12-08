@@ -6,8 +6,8 @@
 }
 
 body {
-    background: #fafafa;
-    color: #222;
+    background: #F5F6F8;
+    color: #1F2937;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -21,7 +21,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 10px max(40px, calc((100% - 1660px) / 2));
-    background: #e4002b;
+    background: #0A1A44;
     color: #fff;
     font-size: 14px;
 }
@@ -46,7 +46,7 @@ main {
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
-    color: #e4002b;
+    color: #1E3A8A;
 }
 
 nav ul {
@@ -57,17 +57,17 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #222;
+    color: #1F2937;
     font-weight: 500;
     transition: .3s;
 }
 
 nav a:hover {
-    color: #e4002b;
+    color: #1E3A8A;
 }
 
 .cta a {
-    background: #e4002b;
+    background: #1E3A8A;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
@@ -76,7 +76,7 @@ nav a:hover {
 }
 
 .cta a:hover {
-    background: #c70024;
+    background: #0A1A44;
 }
 
 .hero {
@@ -122,7 +122,7 @@ nav a:hover {
     display: inline-block;
     margin-right: 15px;
     padding: 12px 25px;
-    background: #e4002b;
+    background: #1E3A8A;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -131,7 +131,7 @@ nav a:hover {
 }
 
 .hero .text a:hover {
-    background: #c70024;
+    background: #0A1A44;
 }
 
 
@@ -144,7 +144,7 @@ nav a:hover {
 .services h2 {
     font-size: 36px;
     margin-bottom: 50px;
-    color: #222;
+    color: #0A1A44;
     position: relative;
     display: inline-block;
 }
@@ -154,7 +154,7 @@ nav a:hover {
     display: block;
     width: 60px;
     height: 4px;
-    background: #e4002b;
+    background: #D4A017;
     margin: 15px auto 0;
     border-radius: 2px;
 }
@@ -250,7 +250,7 @@ nav a:hover {
 }
 
 .item a:hover {
-    color: #e4002b;
+    color: #D4A017;
 }
 
 .item a::after {
@@ -266,7 +266,7 @@ nav a:hover {
 
 .business {
     padding: 60px max(40px, calc((100% - 1660px) / 2));
-    background: #e4002b;
+    background: #0A1A44;
     color: white;
     text-align: center;
 }
@@ -275,8 +275,8 @@ nav a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 30px;
-    background: #fff;
-    color: #e4002b;
+    background: #D4A017;
+    color: #0A1A44;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
@@ -288,7 +288,7 @@ nav a:hover {
 
 .news h2 {
     text-align: center;
-    color: #e4002b;
+    color: #1E3A8A;
     margin-bottom: 30px;
 }
 
@@ -309,24 +309,24 @@ nav a:hover {
 
 .news-grid article:hover {
     transform: translateY(-5px);
-    border-color: #e4002b;
+    border-color: #D4A017;
 }
 
 .news-grid h3 {
-    color: #e4002b;
+    color: #1E3A8A;
     margin-bottom: 10px;
 }
 
 .news-grid a {
     text-decoration: none;
-    color: #e4002b;
+    color: #1E3A8A;
     font-weight: bold;
 }
 
 footer {
     text-align: center;
     padding: 20px max(20px, calc((100% - 1660px) / 2));
-    background: #222;
+    background: #0A1A44;
     color: white;
     margin-top: 40px;
 }
