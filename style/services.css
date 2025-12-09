@@ -150,6 +150,7 @@
 .modal-confirm {
   margin-top: 12px;
   padding: 10px;
+  width: 100%;
   border-radius: 6px;
   background: #e6ffef;
   border: 1px solid #0B8A6A;

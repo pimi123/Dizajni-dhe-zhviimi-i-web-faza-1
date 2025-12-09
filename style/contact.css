@@ -1,0 +1,133 @@
+.contact-hero {
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 20px;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-form-card {
+  width: 420px;
+  flex-shrink: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 880px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .contact-form-card {
+    width: 100%;
+  }
+}
+
+.contact-info {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+.contact-info h2 {
+  margin-top: 0;
+  color: #0A1A44;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-list li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #334155;
+}
+
+.contact-list .meta {
+  font-weight: 600;
+  color: #1E3A8A;
+  min-width: 90px;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  background: linear-gradient(90deg,#eef2ff,#fff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid #e6e9f2;
+  color:#6b7280;
+}
+
+.contact-form-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+.contact-form-card h2 {
+  margin-top:0;
+  color: #0A1A44;
+}
+
+.contact-form .form-row {
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-actions {
+  display:flex;
+  gap:8px;
+  justify-content:flex-end;
+  margin-top:8px;
+}
+
+.small-note {
+  color:#6b7280;
+  font-size:13px;
+  margin-top:8px;
+}
+
+.map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e6e9f2;
+  width: 100%;
+  max-width: 100%;
+  height: 220px;
+  margin-top: 12px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
