@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kontakt - Banka Red & Milky</title>
+
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/contact.css" />
+
+    <link rel="stylesheet" href="../style/auth.css" />
+    <link rel="stylesheet" href="../style/services.css" />
+    <link rel="icon" type="image/png" href="../images/BRM.png" />
+
+
+
+  </head>
+
+  <body>
+    <special-header></special-header>
+
+    <main class="contact-hero">
+      <section style="text-align:center; margin-bottom:18px;">
+        <h1>Na kontaktoni</h1>
+        <p class="small-note">Na dërgoni mesazh ose vizitoni njërën nga degët tona — jemi këtu për t'ju ndihmuar.</p>
+      </section>
+
+      <section class="contact-grid">
+        <!-- Left: message form -->
+        <div class="contact-form-card">
+          <h2>Dërgo mesazh</h2>
+          <form id="contactForm" class="contact-form" autocomplete="off" novalidate>
+            <div class="form-row">
+              <label for="c-name">Emri i plotë</label>
+              <input id="c-name" name="name" type="text" placeholder="Emri juaj" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+            </div>
+
+            <div class="form-row">
+              <label for="c-email">Email</label>
+              <input id="c-email" name="email" type="email" placeholder="email@shembull.com" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+            </div>
+
+            <div class="form-row">
+              <label for="c-phone">Telefoni</label>
+              <input id="c-phone" name="phone" type="tel" placeholder="+355 4 123 4567" inputmode="tel" pattern="[0-9+()\- \s]*" autocomplete="off" />
+              <div class="small-note">Shënim: shkruani 7–15 shifra (mund të përfshini +, (), - dhe hapësira).</div>
+            </div>
+
+            <div class="form-row">
+              <label for="c-subject">Subjekti</label>
+              <select id="c-subject" name="subject" autocomplete="off">
+                <option value="">Zgjidhni subjektin</option>
+                <option value="llogari">Llogari</option>
+                <option value="kredi">Kredi</option>
+                <option value="kartela">Kartelë</option>
+                <option value="ebanking">e-Banking</option>
+                <option value="other">Tjetër</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="c-message">Mesazhi</label>
+              <textarea id="c-message" name="message" rows="6" placeholder="Shkruani pyetjen ose kërkesën tuaj" maxlength="2000"></textarea>
+            </div>
+
+            <div class="contact-actions">
+              <button type="reset" class="btn-secondary">Pastro</button>
+              <button type="submit" class="btn-primary">Dërgo mesazhin</button>
+            </div>
+
+            <div id="contactConfirm" class="modal-confirm" hidden style="margin-top:10px;"></div>
+          </form>
+        </div>
+
+        <aside class="contact-info" aria-label="Informacioni i kontaktit">
+          <h2>Na kontaktoni</h2>
+
+          <ul class="contact-list" aria-hidden="false">
+            <li>
+              <span class="meta">Adresa</span>
+              <span>Rruga Kryesore 12, Tiranë, Shqipëri</span>
+            </li>
+            <li>
+              <span class="meta">Telefon</span>
+              <span><a href="tel:+35541234567">+355 4 123 4567</a> (Qendër Ndihme)</span>
+            </li>
+            <li>
+              <span class="meta">Email</span>
+              <span><a href="mailto:info@redmilkybank.com">info@redmilkybank.com</a></span>
+            </li>
+            <li>
+              <span class="meta">Ora pune</span>
+              <span>Hë–Pr 08:00–16:00 • Sht 09:00–13:00</span>
+            </li>
+          </ul>
+
+          <div style="margin-top:12px;">
+            <div class="map-placeholder" role="img" aria-label="Harta - vendndodhja jonë">
+<div class="map-container" style="border-radius:8px; overflow:hidden; border:1px solid #e6e9f2;">
+              <iframe
+                src="https://maps.google.com/maps?q=41.3275,19.8187&z=15&output=embed"
+                width="100%"
+                height="220"
+                style="border:0; display:block;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>            </div>
+            <p class="small-note" style="margin-top:10px;">
+              Preferoni të bisedoni me dikë menjëherë? Telefononi numrin e qendrës së ndihmës ose shtypni butonin e mëposhtëm për të rezervuar takim.
+            </p>
+            <div style="margin-top:10px; display:flex; gap:8px;">
+              <button class="btn-primary" class="btn-primary" href="services.html">Rezervo takim</button>
+            </div>
+
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <special-footer></special-footer>
+
+    <script type="module" src="../js/components.js" defer></script>
+    <script type="module" src="../js/services.js" defer></script>
+    <script type="module" src="../js/contact.js" defer></script>
+
+  </body>
+</html>
