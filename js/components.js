@@ -16,7 +16,7 @@ class SpecialHeader extends HTMLElement {
                 </nav>
                 <div class="cta">
                 <div>
-                <a href="apply.html" class="profile-pic" > <img src="../images/profile.png" class="profile-pic" /></a>
+                <a href="./login.html" class="profile-pic" > <img src="../images/profile.png" class="profile-pic" /></a>
                 </div>
                 <a href="ebanking.html" class="ebanking-link">e-Banking</a>
                 </div>
