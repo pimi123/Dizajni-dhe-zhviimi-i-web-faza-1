@@ -66,7 +66,13 @@ nav a:hover {
     color: #1E3A8A;
 }
 
-.cta a {
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+}
+
+.cta .ebanking-link {
     background: #1E3A8A;
     padding: 10px 20px;
     color: white;
@@ -75,7 +81,7 @@ nav a:hover {
     transition: 0.3s;
 }
 
-.cta a:hover {
+.cta .ebanking-link:hover {
     background: #0A1A44;
 }
 
@@ -295,6 +301,7 @@ nav a:hover {
 .news-grid {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
@@ -325,15 +332,195 @@ nav a:hover {
 
 footer {
     text-align: center;
-    padding: 20px max(20px, calc((100% - 1660px) / 2));
-    background: #0A1A44;
-    color: white;
-    margin-top: 40px;
+    padding: 18px max(20px, calc((100% - 1660px) / 2));
+    background: transparent;
+    color: inherit;
 }
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
     padding: 20px;
+}
+
+.profile-pic{
+    width: 35px !important;
+    height: 35px !important;
+}
+
+/* --- Fun footer styles (improved) --- */
+.site-footer {
+  position: relative;
+  background: linear-gradient(180deg,#07143a 0%, #0b225a 100%);
+  color: #fff;
+  padding: 36px 0 28px;
+  margin-top: 48px;
+  font-family: inherit;
+  border-top: 4px solid rgba(255,255,255,0.04);
+  box-shadow: 0 -6px 30px rgba(7,20,58,0.25);
+}
+
+/* center inner content for consistent max width */
+.site-footer > .footer-top,
+.site-footer > .footer-grid,
+.site-footer > .footer-bottom {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* top row */
+.site-footer .footer-top {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  margin-bottom: 18px;
+  flex-wrap:wrap;
+}
+
+.site-footer .brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:700;
+  font-size:1.08rem;
+  color: #fff;
+}
+
+.site-footer .mascot {
+  display:inline-block;
+  transform-origin: 50% 50%;
+  transition: transform .25s ease, filter .25s ease;
+  cursor: default;
+  font-size: 1.25rem;
+}
+.site-footer .mascot:hover,
+.site-footer .mascot:focus { transform: rotate(-12deg) scale(1.18); filter: drop-shadow(0 8px 10px rgba(0,0,0,0.35)); }
+
+.site-footer .fun-cta { color:#f3e9ff; opacity:0.98; font-size:.97rem; }
+
+/* grid */
+.footer-grid {
+  display:flex;
+  gap:28px;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:18px;
+  flex-wrap:wrap;
+}
+
+.footer-col { flex:1 1 240px; min-width:200px; }
+.footer-col h4 { margin:0 0 10px 0; color:#ffdede; font-size:1rem; }
+.footer-col p, .footer-links { color: #dbeafc; margin:0; font-size:.97rem; line-height:1.5; }
+.footer-links { list-style:none; padding:0; margin:0; }
+.footer-links li { margin:8px 0; }
+.footer-links a {
+  color:#cfe6ff;
+  text-decoration:none;
+  display:inline-block;
+  transition: color .18s, transform .18s;
+  outline: none;
+}
+.footer-links a:hover,
+.footer-links a:focus { color:#fff; transform: translateX(6px); text-decoration: underline; }
+
+/* newsletter */
+.newsletter-form { display:flex; gap:8px; margin-top:8px; align-items:center; flex-wrap:wrap; }
+.newsletter-form input[type="email"]{
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:rgba(255,255,255,0.04);
+  color:#fff;
+  outline:none;
+  min-width:200px;
+  transition: box-shadow .12s, transform .12s;
+}
+.newsletter-form input[type="email"]::placeholder { color: rgba(255,255,255,0.6); }
+
+.newsletter-form input[type="email"]:focus {
+  box-shadow: 0 6px 18px rgba(11,34,90,0.35);
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.22);
+}
+
+/* button */
+.newsletter-form button{
+  background:linear-gradient(90deg,#ff6b6b,#ff8a5c);
+  border:none;
+  color:#fff;
+  padding:9px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+  font-weight:700;
+}
+.newsletter-form button:hover,
+.newsletter-form button:focus { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(255,138,92,0.18); }
+
+/* message */
+.newsletter-msg { margin-top:8px; color:#ffe8b8; font-weight:700; }
+
+/* bottom row */
+.footer-bottom { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; border-top:1px dashed rgba(255,255,255,0.04); padding:16px 20px 0; margin-top:8px; }
+.social-icons a.si {
+  font-size:20px;
+  margin-right:8px;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:38px;
+  height:38px;
+  padding:6px;
+  border-radius:10px;
+  transition: transform .18s, background .18s, box-shadow .18s;
+  background: rgba(255,255,255,0.02);
+  color:#fff;
+}
+.social-icons a.si:hover,
+.social-icons a.si:focus { transform: translateY(-4px) scale(1.06); background: rgba(255,255,255,0.045); box-shadow: 0 8px 22px rgba(7,20,58,0.28); }
+
+/* social pop */
+.si-pop { animation: si-pop 0.6s ease forwards; }
+@keyframes si-pop {
+  0% { transform: translateY(0) scale(1); filter: drop-shadow(0 0 0 rgba(255,255,255,0)); }
+  50%{ transform: translateY(-8px) scale(1.28); filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45)); }
+  100%{ transform: translateY(0) scale(1); }
+}
+
+/* emoji burst: positioned relative to footer and responsive */
+.emoji-burst {
+  position: absolute;
+  right: 28px;
+  bottom: 120px;
+  pointer-events:none;
+  font-size:22px;
+  animation: burst 1s ease-out forwards;
+  filter: drop-shadow(0 8px 12px rgba(0,0,0,0.35));
+}
+@keyframes burst {
+  0% { transform: translateY(0) scale(.9); opacity:0; }
+  20% { opacity:1; transform: translateY(-18px) scale(1.08); }
+  100% { transform: translateY(-72px) scale(.9); opacity:0; }
+}
+
+/* keyboard focus visibility */
+.site-footer a:focus,
+.site-footer button:focus,
+.site-footer input:focus { outline: 3px solid rgba(212,160,23,0.16); outline-offset: 2px; }
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .mascot, .site-footer * { transition: none !important; animation: none !important; }
+}
+
+/* responsive */
+@media (max-width:860px){
+  .footer-grid { flex-direction:column; gap:14px; }
+  .site-footer .footer-top, .footer-bottom { flex-direction:column; align-items:flex-start; gap:10px;}
+  .emoji-burst { right: 16px; bottom: 160px; font-size:18px; }
 }
