@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.getElementById("loginForm");
   const registerForm = document.getElementById("registerForm");
 
-  // Helper function to show error
   const showError = (input, message) => {
     const errorMsg = input.nextElementSibling;
     if (errorMsg && errorMsg.classList.contains("error")) {
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Helper function to clear errors
   const clearErrors = (form) => {
     const errors = form.querySelectorAll(".error");
     errors.forEach((error) => {
@@ -22,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // Helper to validate email format
   const isValidEmail = (email) => {
     return String(email)
       .toLowerCase()
@@ -31,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
       );
   };
 
-  // --- LOGIN LOGIC ---
   if (loginForm) {
     loginForm.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -59,12 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (hasError) return;
 
-      // Check LocalStorage
       const users = JSON.parse(localStorage.getItem("users")) || [];
       const user = users.find((u) => u.email === email && u.password === pass);
 
       if (user) {
-        // Login successful
         localStorage.setItem("currentUser", JSON.stringify(user));
         alert("Kyçja u krye me sukses! Po ridrejtoheni...");
         window.location.href = "index.html";
@@ -74,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // --- REGISTER LOGIC ---
   if (registerForm) {
     registerForm.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -122,14 +115,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (hasError) return;
 
-      // Check if user exists
       const users = JSON.parse(localStorage.getItem("users")) || [];
       if (users.some((u) => u.email === email)) {
         showError(emailInput, "Ky email është regjistruar tashmë.");
         return;
       }
 
-      // Register new user
       const newUser = {
         name: name,
         email: email,

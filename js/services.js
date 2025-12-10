@@ -50,7 +50,6 @@
     if (consultFields) consultFields.hidden = true;
     if (companyInput) companyInput.hidden = true;
 
-    // clear 'required' for all possible conditional inputs
     const conditionalNames = [
       "loanAmount",
       "loanTerm",
@@ -64,7 +63,6 @@
       if (el) el.required = false;
     });
 
-    // ensure form visible and confirmation hidden
     form.hidden = false;
     if (confirmEl) confirmEl.hidden = true;
   }
@@ -108,10 +106,8 @@
       companyInput.required = true;
     }
 
-    // custom submit button text if provided
     if (submitBtn && meta.submitText) submitBtn.textContent = meta.submitText;
 
-    // reset values and show modal
     form.reset();
     modal.classList.add("show");
     const first = form.querySelector('input[name="name"]');
@@ -124,7 +120,6 @@
     }
   });
 
-  // ----- helpers for allowed keys -----
   function allowControlKey(e) {
     const allowed = [8, 9, 13, 27, 46, 35, 36, 37, 38, 39, 40];
 //  8 = Backspace
@@ -143,7 +138,6 @@
     return false;
   }
 
-  // ----- numeric / phone enforcement helpers -----
   function attachIntegerOnly(el) {
     if (!el) return;
     el.setAttribute("inputmode", "numeric");
@@ -241,7 +235,6 @@
     });
   }
 
-  // Attach numeric/phone enforcement for possible fields now (even if hidden)
   function initEnforcement() {
     if (!form) return;
     const loanAmountEl = form.querySelector('[name="loanAmount"]');
@@ -254,7 +247,6 @@
 
   initEnforcement();
 
-  // ----- Basic validators used at submit -----
   function isEmail(v) {
     if (!v) return false;
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
@@ -291,7 +283,6 @@
   }
 
   if (form) {
-    // Disable browser suggestions/autofill for this modal form and all inputs
     form.setAttribute('autocomplete', 'off');
 
     const disableSuggestAttrs = ['autocomplete','autocorrect','autocapitalize','spellcheck'];
@@ -303,7 +294,6 @@
       inp.setAttribute('spellcheck', 'false');
     });
 
-    // Also ensure phone/number fields get the attributes too (if needed)
     const phone = form.querySelector('[name="phone"]');
     if (phone) {
       phone.setAttribute('autocomplete', 'off');
@@ -313,7 +303,6 @@
     form.addEventListener("submit", function (ev) {
       ev.preventDefault();
 
-      // clear previous custom validity
       const allInputs = Array.from(form.querySelectorAll("input, textarea, select"));
       allInputs.forEach(clearValidity);
 

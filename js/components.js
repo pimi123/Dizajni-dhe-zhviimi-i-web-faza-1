@@ -111,16 +111,6 @@ class SpecialFooter extends HTMLElement {
         setTimeout(() => burst.remove(), 1500);
       });
     }
-
-    // simple hover/click sparkle on social icons
-    const socials = this.querySelectorAll(".social-icons .si");
-    socials.forEach((el) => {
-      el.addEventListener("click", (ev) => {
-        ev.preventDefault();
-        el.classList.add("si-pop");
-        setTimeout(() => el.classList.remove("si-pop"), 600);
-      });
-    });
   }
 }
 
